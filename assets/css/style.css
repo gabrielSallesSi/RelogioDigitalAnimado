@@ -68,51 +68,6 @@ background-repeat: no-repeat;
 }
 
 @media screen and (max-width:768px){
-    .mensagem {
-        font-size: 2em;
-        text-align: center;
-        animation: fadein 3s, float 5s ease-in-out infinite;
-        animation-fill-mode: forwards;
-        opacity: 0;
-        transform: translateY(-20px);
-        position: fixed;
-        top: 25%;
-        left: 25%;
-        transform: translate(-50%, -50%);
-        z-index: 999;
-        display: none;
-
-    }
-
-    .mensagem1 {
-        font-size: 2em;
-        text-align: center;
-        animation: fadein 3s, float 5s ease-in-out infinite;
-        animation-fill-mode: forwards;
-        opacity: 0;
-        position: fixed;
-        top: 25%;
-        left: 34%;
-        transform: translate(-50%, -50%);
-        z-index: 999;
-        display: none;
-    }
-
-    .mensagem2 {
-        font-size: 2em;
-        text-align: center;
-        animation: fadein 3s, float 5s ease-in-out infinite;
-        animation-fill-mode: forwards;
-        opacity: 0;
-        transform: translateY(-20px);
-        position: fixed;
-        top: 25%;
-        left: 25%;
-        transform: translate(-50%, -50%);
-        z-index: 999;
-        display: none;
-
-    }
 
     .relogio {
         display: flex;
@@ -169,27 +124,12 @@ background-repeat: no-repeat;
         align-items: center;
         justify-content: center;
         height: 200px;
-        margin-left: 145px;
+        margin-left: 155px;
         width: 500px;
         background: transparent;
         border-radius: 3px;
         box-shadow: 0px 8px 10px rgba(255, 255, 255, 0);
         
-    }
-
-    .mensagem{
-        font-size: 2em;
-        margin-left: -35px;
-    }
-
-    .mensagem1{
-        font-size: 2em;
-        margin-left: -35px;
-    }
-
-    .mensagem2{
-        font-size: 2em;
-        margin-left: -35px;
     }
 
 }
