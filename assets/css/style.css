@@ -169,7 +169,7 @@ background-repeat: no-repeat;
         align-items: center;
         justify-content: center;
         height: 200px;
-        margin-left: 155px;
+        margin-left: 145px;
         width: 500px;
         background: transparent;
         border-radius: 3px;
@@ -177,18 +177,19 @@ background-repeat: no-repeat;
         
     }
 
-    .mensagem1 {
+    .mensagem{
         font-size: 2em;
-        text-align: center;
-        animation: fadein 3s, float 5s ease-in-out infinite;
-        animation-fill-mode: forwards;
-        opacity: 0;
-        position: fixed;
-        top: 25%;
-        left: 25%;
-        transform: translate(-50%, -50%);
-        z-index: 999;
-        display: none;
+        margin-left: -35px;
+    }
+
+    .mensagem1{
+        font-size: 2em;
+        margin-left: -35px;
+    }
+
+    .mensagem2{
+        font-size: 2em;
+        margin-left: -35px;
     }
 
 }
