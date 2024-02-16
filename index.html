@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Relógio</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            position: relative;
+        }
+
+        .mensagem {
+            font-size: 3em;
+            text-align: center;
+            animation: fadein 3s, float 5s ease-in-out infinite;
+            animation-fill-mode: forwards;
+            opacity: 0;
+            transform: translateY(-20px);
+            position: absolute;
+            top: 25%;
+            left: 39%;
+            transform: translate(-50%, -50%);
+            z-index: 999;
+            display: none;
+        }
+
+        @keyframes fadein {
+            from { opacity: 0; transform: translateY(-100px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-20px); } /* Flutuação para cima */
+    }
+    </style>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        position: relative;
+    }
+
+    .mensagem1 {
+        font-size: 3em;
+        text-align: center;
+        animation: fadein 3s, float 5s ease-in-out infinite;
+        animation-fill-mode: forwards;
+        opacity: 0;
+        transform: translateY(-20px);
+        position: absolute;
+        top: 25%;
+        left: 42%;
+        transform: translate(-50%, -50%);
+        z-index: 999;
+        display: none;
+    }
+
+    @keyframes fadein {
+        from { opacity: 0; transform: translateY(-100px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-20px); } /* Flutuação para cima */
+    }
+</style>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        position: relative;
+    }
+
+    .mensagem2 {
+        font-size: 3em;
+        text-align: center;
+        animation: fadein 3s, float 5s ease-in-out infinite;
+        animation-fill-mode: forwards;
+        opacity: 0;
+        transform: translateY(-20px);
+        position: absolute;
+        top: 25%;
+        left: 42%;
+        transform: translate(-50%, -50%);
+        z-index: 999;
+        display: none;
+    }
+
+    @keyframes fadein {
+        from { opacity: 0; transform: translateY(-100px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-20px); } /* Flutuação para cima */
+    }
+</style>
+
+</head>
+
+<body id="body">
+    <div class="mensagem" id="mensagem" style="color: rgb(241, 253, 169);">Bom dia! 🤗☀️</div>
+    <div class="mensagem1" id="mensagem1" style="color: rgb(63, 196, 114);">Boa tarde! 😊👍</div>
+    <div class="mensagem2" id="mensagem2" style="color: #fdfdfdce;">Boa Noite! ✌😎</div>
+    <div class="relogio" id="relogiox">
+        <div>
+            <span id="horas">00</span>
+            <span class="tempo">Horas</span>
+        </div>
+
+        <div>
+            <span id="minutos">00</span>
+            <span class="tempo">Minutos</span>
+        </div>
+
+        <div>
+            <span id="segundos">00</span>
+            <span class="tempo">Segundos</span>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

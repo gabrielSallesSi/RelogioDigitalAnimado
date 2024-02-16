@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.relogio {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+    width: 550px;
+    background: transparent;
+    border-radius: 3px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, .5);
+}
+
+#body.dia{
+    background-image: url('../gif-dia.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#body.tarde{
+    background-image: url('../gif-tarde.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#body.noite{
+background-image: url('../gif-noite.gif');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.relogio div {
+    height: 170px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    background: rgba(122, 116, 116, 0.9);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .7);
+    border-radius: 7px;
+    letter-spacing: 3px;
+}
+
+.relogio span {
+    font-weight: bolder;
+    font-size: 60px;
+}
+
+.relogio span.tempo {
+    font-size: 10px;
+}
+
+@media screen and (max-width:768px){
+    .mensagem {
+        font-size: 2em;
+        text-align: center;
+        animation: fadein 3s, float 5s ease-in-out infinite;
+        animation-fill-mode: forwards;
+        opacity: 0;
+        transform: translateY(-20px);
+        position: fixed;
+        top: 25%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+        z-index: 999;
+        display: none;
+
+    }
+
+    .mensagem1 {
+        font-size: 2em;
+        text-align: center;
+        animation: fadein 3s, float 5s ease-in-out infinite;
+        animation-fill-mode: forwards;
+        opacity: 0;
+        position: fixed;
+        top: 25%;
+        left: 34%;
+        transform: translate(-50%, -50%);
+        z-index: 999;
+        display: none;
+    }
+
+    .mensagem2 {
+        font-size: 2em;
+        text-align: center;
+        animation: fadein 3s, float 5s ease-in-out infinite;
+        animation-fill-mode: forwards;
+        opacity: 0;
+        transform: translateY(-20px);
+        position: fixed;
+        top: 25%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+        z-index: 999;
+        display: none;
+
+    }
+
+    .relogio {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 200px;
+        width: 550px;
+        background: transparent;
+        border-radius: 3px;
+        box-shadow: 0px 8px 10px rgba(81, 82, 82, 0.521);
+    }
+
+    .relogio div {
+        height: 140px;
+        width: 140px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+        background: rgba(0, 0, 0, 0.562);
+        box-shadow: 5px 5px 15px rgba(29, 206, 191, 0.7);
+        border-radius: 70px;
+        letter-spacing: 3px;
+    }
+
+    .relogio span {
+        font-weight: bolder;
+        font-size: 40px;
+    }
+    
+}
+
+@media screen and (max-width:440px){
+
+    .relogio div {
+        height: 120px;
+        width: 120px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+        background: rgba(0, 0, 0, 0.562);
+        box-shadow: 5px 5px 15px rgba(136, 136, 136, 0.7);
+        border-radius: 70px;
+        letter-spacing: 3px;
+        top: 50%;
+        left: 50%;
+    }
+
+    .relogio {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        height: 200px;
+        margin-left: 155px;
+        width: 500px;
+        background: transparent;
+        border-radius: 3px;
+        box-shadow: 0px 8px 10px rgba(255, 255, 255, 0);
+        
+    }
+
+    .mensagem1 {
+        font-size: 2em;
+        text-align: center;
+        animation: fadein 3s, float 5s ease-in-out infinite;
+        animation-fill-mode: forwards;
+        opacity: 0;
+        position: fixed;
+        top: 25%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+        z-index: 999;
+        display: none;
+    }
+
+}
